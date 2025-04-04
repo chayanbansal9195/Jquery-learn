@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Learning</title>
+  </head>
+  <body>
+    <p class="odd">This is para 1</p>
+    <p id="second">This is para 2</p>
+    <p class="odd">This is para 3</p>
+    <p>This is para 4</p>
+    <p>This is para 5</p>
+  </body>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      console.log("We are in jquery", $);
+    //   element selector
+      $("p").click(function () {
+        console.log("clicked", this);
+        //   $("p").hide();
+        // $(this).hide();
+      });
+    //   id selector
+    $('#second').click(function(){
+        console.log("second");
+    })
+    });
+    //class selector
+    $('.odd').click(function(){
+        console.log("odd");
+        
+    })
+  </script>
+</html>
