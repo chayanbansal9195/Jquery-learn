@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jquery Learning</title>
   </head>
+
   <body>
     <p class="odd">This is para 1</p>
     <p id="second">This is para 2</p>
     <p class="odd">This is para 3</p>
     <p>This is para 4</p>
     <p>This is para 5</p>
+    <button id="btn">toggle now</button>
+
+    <div id="wiki">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, ad. Earum
+      ut laborum deserunt illum odio iusto doloremque amet quo commodi ad
+      quaerat doloribus quas dolorem dolore, eveniet veritatis sed?
+    </div>
+
+    <form>
+      <input type="text" id="inp">
+      <textarea name="" id="ta">Value text area</textarea>
+    </form>
   </body>
+
   <script src="js/jquery-3.7.1.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      console.log("We are in jquery", $);
-    //   element selector
-      $("p").click(function () {
-        console.log("clicked", this);
-        //   $("p").hide();
-        // $(this).hide();
-      });
-    //   id selector
-    $('#second').click(function(){
-        console.log("second");
-    })
-    });
-    //class selector
-    $('.odd').click(function(){
-        console.log("odd");
-        
-    })
-  </script>
+  <script src="js/script.js"></script>
 </html>
